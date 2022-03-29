@@ -8,8 +8,3 @@
 /mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/LoggerService/obj/Debug/net6.0/LoggerService.dll
 /mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/LoggerService/obj/Debug/net6.0/ref/LoggerService.dll
 /mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/LoggerService/obj/Debug/net6.0/LoggerService.pdb
-/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/LoggerService/bin/Debug/net6.0/LoggerService.deps.json
-/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/LoggerService/bin/Debug/net6.0/ref/LoggerService.dll
-/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/LoggerService/bin/Debug/net6.0/Contracts.dll
-/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/LoggerService/bin/Debug/net6.0/Contracts.pdb
-/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/LoggerService/obj/Debug/net6.0/LoggerService.csproj.CopyComplete
