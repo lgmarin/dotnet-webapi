@@ -8,3 +8,5 @@
 /mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/Contracts/obj/Debug/net6.0/Contracts.dll
 /mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/Contracts/obj/Debug/net6.0/ref/Contracts.dll
 /mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/Contracts/obj/Debug/net6.0/Contracts.pdb
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/Contracts/bin/Debug/net6.0/Contracts.deps.json
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/Contracts/bin/Debug/net6.0/ref/Contracts.dll

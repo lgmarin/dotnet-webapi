@@ -32,3 +32,13 @@
 /mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/AccountOwnerServer/obj/Debug/net6.0/ref/AccountOwnerServer.dll
 /mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/AccountOwnerServer/obj/Debug/net6.0/AccountOwnerServer.pdb
 /mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/AccountOwnerServer/obj/Debug/net6.0/AccountOwnerServer.genruntimeconfig.cache
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/AccountOwnerServer/bin/Debug/net6.0/Entities.dll
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/AccountOwnerServer/bin/Debug/net6.0/Entities.pdb
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/AccountOwnerServer/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/AccountOwnerServer/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/AccountOwnerServer/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/AccountOwnerServer/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/AccountOwnerServer/bin/Debug/net6.0/MySqlConnector.dll
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/AccountOwnerServer/bin/Debug/net6.0/Pomelo.EntityFrameworkCore.MySql.dll
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/AccountOwnerServer/bin/Debug/net6.0/Repository.dll
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/AccountOwnerServer/bin/Debug/net6.0/Repository.pdb
