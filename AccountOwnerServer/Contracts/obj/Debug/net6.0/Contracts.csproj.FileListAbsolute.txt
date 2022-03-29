@@ -1,0 +1,12 @@
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/Contracts/bin/Debug/net6.0/Contracts.dll
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/Contracts/bin/Debug/net6.0/Contracts.pdb
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/Contracts/obj/Debug/net6.0/Contracts.csproj.AssemblyReference.cache
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/Contracts/obj/Debug/net6.0/Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/Contracts/obj/Debug/net6.0/Contracts.AssemblyInfoInputs.cache
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/Contracts/obj/Debug/net6.0/Contracts.AssemblyInfo.cs
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/Contracts/obj/Debug/net6.0/Contracts.csproj.CoreCompileInputs.cache
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/Contracts/obj/Debug/net6.0/Contracts.dll
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/Contracts/obj/Debug/net6.0/ref/Contracts.dll
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/Contracts/obj/Debug/net6.0/Contracts.pdb
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/Contracts/bin/Debug/net6.0/Contracts.deps.json
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/Contracts/bin/Debug/net6.0/ref/Contracts.dll
