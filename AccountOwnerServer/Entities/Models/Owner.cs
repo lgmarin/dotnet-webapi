@@ -4,7 +4,7 @@ using System.Security.Principal;
 
 namespace Entities;
 
-[Table("Owner")]
+[Table("owner")]
 public class Owner
 {
     public Guid OwnerId {get; set;}

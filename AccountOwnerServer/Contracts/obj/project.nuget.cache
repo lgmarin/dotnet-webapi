@@ -1,8 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "981FUOem2eMBaqnM1iPfenOmwd3wqm7V1hvzazO0qAnyiYTGE1Ii+c0UOEr78pO70ol3WawA3ODE37gDYXUKIA==",
+  "dgSpecHash": "XXfqBIxJGcGceB5YpwtnbjTL86j1peurpSO1WvDNsSEvjmPkPBtTDnuwWZvd/ZR6o3YbOe3Uk+rPiiJssSpd+A==",
   "success": true,
   "projectFilePath": "/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/Contracts/Contracts.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/luiz/.nuget/packages/microsoft.entityframeworkcore/6.0.3/microsoft.entityframeworkcore.6.0.3.nupkg.sha512",
+    "/home/luiz/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.3/microsoft.entityframeworkcore.abstractions.6.0.3.nupkg.sha512",
+    "/home/luiz/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.3/microsoft.entityframeworkcore.analyzers.6.0.3.nupkg.sha512",
+    "/home/luiz/.nuget/packages/microsoft.extensions.caching.abstractions/6.0.0/microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
+    "/home/luiz/.nuget/packages/microsoft.extensions.caching.memory/6.0.1/microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
+    "/home/luiz/.nuget/packages/microsoft.extensions.dependencyinjection/6.0.0/microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "/home/luiz/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/home/luiz/.nuget/packages/microsoft.extensions.logging/6.0.0/microsoft.extensions.logging.6.0.0.nupkg.sha512",
+    "/home/luiz/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.0/microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "/home/luiz/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/home/luiz/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/home/luiz/.nuget/packages/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg.sha512",
+    "/home/luiz/.nuget/packages/system.diagnostics.diagnosticsource/6.0.0/system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "/home/luiz/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

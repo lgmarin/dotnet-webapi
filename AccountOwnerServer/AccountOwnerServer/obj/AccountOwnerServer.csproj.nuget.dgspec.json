@@ -26,9 +26,6 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/Entities/Entities.csproj": {
-                "projectPath": "/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/Entities/Entities.csproj"
-              },
               "/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/LoggerService/LoggerService.csproj": {
                 "projectPath": "/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/LoggerService/LoggerService.csproj"
               },
@@ -100,7 +97,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/Entities/Entities.csproj": {
+                "projectPath": "/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/Entities/Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
