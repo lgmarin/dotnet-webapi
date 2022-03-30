@@ -31,7 +31,7 @@ public static class ServiceExtensions
 
     public static void ConfigureMySqlContext(this IServiceCollection services, IConfiguration config)
     {
-        var connectionString = config["mysqlconnection: connectionString"];
+        var connectionString = config["mysql:connectionString"];
         services.AddDbContext<RepositoryContext>(o => o.UseMySql(connectionString, MySqlServerVersion.LatestSupportedServerVersion));
     }
 

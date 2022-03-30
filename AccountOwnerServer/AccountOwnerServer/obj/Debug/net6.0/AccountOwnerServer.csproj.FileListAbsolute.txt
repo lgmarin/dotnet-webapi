@@ -42,3 +42,6 @@
 /mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/AccountOwnerServer/bin/Debug/net6.0/Pomelo.EntityFrameworkCore.MySql.dll
 /mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/AccountOwnerServer/bin/Debug/net6.0/Repository.dll
 /mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/AccountOwnerServer/bin/Debug/net6.0/Repository.pdb
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/AccountOwnerServer/bin/Debug/net6.0/mono_crash.215a50ed29.0.json
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/AccountOwnerServer/bin/Debug/net6.0/AutoMapper.dll
+/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/AccountOwnerServer/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

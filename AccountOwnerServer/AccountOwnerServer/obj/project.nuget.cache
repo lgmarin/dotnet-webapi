@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "aLNa1MranwqSUvX7qYEiVBhzyt8g31vD8csi8QUz6dvYngcYBLpYFFben39qQB+5paWpR5OrezLdbUHNPrPtuw==",
+  "dgSpecHash": "PJtfwa1QGdEXd2Cf52LiAQmL7D3znNtGwZIAtg6GI0c8B5aMoPDQVW2eSHgciqQA6yGEXkHoznmOgoEcQTygOw==",
   "success": true,
   "projectFilePath": "/mnt/data/Documents/Projects/dotnet-webapi/AccountOwnerServer/AccountOwnerServer/AccountOwnerServer.csproj",
   "expectedPackageFiles": [
+    "/home/luiz/.nuget/packages/automapper/11.0.0/automapper.11.0.0.nupkg.sha512",
+    "/home/luiz/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/11.0.0/automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "/home/luiz/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/luiz/.nuget/packages/microsoft.entityframeworkcore/6.0.3/microsoft.entityframeworkcore.6.0.3.nupkg.sha512",
     "/home/luiz/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.3/microsoft.entityframeworkcore.abstractions.6.0.3.nupkg.sha512",
     "/home/luiz/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.3/microsoft.entityframeworkcore.analyzers.6.0.3.nupkg.sha512",

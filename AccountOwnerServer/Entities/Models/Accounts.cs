@@ -3,10 +3,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Entities;
 
-[Table("account")]
+[Table("Account")]
 public class Account
 {
-    public Guid AccountId {get; set;}
+    [Column("AccountId")]
+    public Guid Id {get; set;}
 
     [Required]
     public DateTime DateCreated {get; set;}
@@ -16,6 +17,5 @@ public class Account
 
     [ForeignKey(nameof(Owner))]
     public Guid OwnerId {get; set;}
-
     public Owner Owner {get; set;}
 }
