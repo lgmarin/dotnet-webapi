@@ -1,0 +1,12 @@
+2022-03-31 15:05:39.6917 ERROR Something wrong in CreateOwner action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+OwnerCreateDTO -> Owner
+Entities.DTO.OwnerCreateDTO -> Entities.Owner
+2022-03-31 15:06:02.7832 INFO GET Method Returned all Owners.
+2022-03-31 15:06:22.2355 ERROR Something wrong in CreateOwner action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+OwnerCreateDTO -> Owner
+Entities.DTO.OwnerCreateDTO -> Entities.Owner
+2022-03-31 15:12:48.4365 INFO GET Method Returned Owner with id: 08da1341-9a89-4dc7-879b-7f68328f3f74.

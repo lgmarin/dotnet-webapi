@@ -1,5 +1,3 @@
-using AccountOwnerServer.DTO;
-
 namespace Entities.DTO;
 
 public class OwnerDTO

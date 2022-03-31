@@ -1,4 +1,3 @@
-using AccountOwnerServer.DTO;
 using AutoMapper;
 using Entities;
 using Entities.DTO;
@@ -12,5 +11,9 @@ public class MappingProfile : Profile
         CreateMap<Owner, OwnerDTO>();
 
         CreateMap<Account, AccountDTO>();
+
+        CreateMap<OwnerCreateDTO, Owner>();
+
+        CreateMap<OwnerUpdateDTO, Owner>();
     }  
 }

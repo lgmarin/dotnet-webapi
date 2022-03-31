@@ -1,4 +1,4 @@
-namespace AccountOwnerServer.DTO;
+namespace Entities.DTO;
 
 public class AccountDTO
 {

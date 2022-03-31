@@ -40,13 +40,13 @@ public class OwnerController : ControllerBase
         }
     }
 
-    [HttpGet("id")]
+    [HttpGet("{id}", Name = "OwnerById")]
     public IActionResult GetOwnerById(Guid id)
     {
         try
         {
             var owner = _repository.Owner.GetOwnerById(id);
-            if (owner == null)
+            if (owner is null)
             {
                 _logger.LogInfo($"GET Method Not Found Owner with id: {id}.");
                 return NotFound();
@@ -62,6 +62,103 @@ public class OwnerController : ControllerBase
         catch (System.Exception ex)
         {
             _logger.LogError($"Something wrong in GetAllOwners action: {ex.Message}");
+            return StatusCode(500);
+        }
+    }
+
+    [HttpPost]
+    public IActionResult CreateOwner([FromBody]OwnerCreateDTO owner)
+    {
+        try
+        {
+            if (owner is null)
+            {
+                _logger.LogInfo("The Owner object provided is null");
+                return BadRequest("Owner object is null!");
+            }
+
+            if (!ModelState.IsValid)
+            {
+                _logger.LogInfo("The Owner object provided is invalid");
+                return BadRequest("Invalid Owner object!");                
+            }
+
+            var ownerEntity = _mapper.Map<Owner>(owner);
+
+            _repository.Owner.CreateOwner(ownerEntity);
+            _repository.Save();
+
+            var createdOwner = _mapper.Map<OwnerDTO>(ownerEntity);
+
+            return CreatedAtRoute("OwnerById", new{createdOwner.Id}, createdOwner);
+        }
+        catch (System.Exception ex)
+        {
+            _logger.LogError($"Something wrong in CreateOwner action: {ex.Message}");
+            return StatusCode(500);
+        }
+    }
+
+    [HttpPut("id")]
+    public IActionResult UpdateOwner(Guid id, [FromBody]OwnerUpdateDTO owner)
+    {
+        try
+        {
+            if (owner is null)
+            {
+                _logger.LogInfo("The Owner object provided is null");
+                return BadRequest("Owner object is null!");
+            }
+
+            if (!ModelState.IsValid)
+            {
+                _logger.LogInfo("The Owner object provided is invalid");
+                return BadRequest("Invalid Owner object!");                
+            }
+
+            var ownerEntity = _repository.Owner.GetOwnerById(id);
+
+            if (ownerEntity is null)
+            {
+                _logger.LogInfo($"The Owner with id: {id} not found!");
+                return NotFound();                     
+            }
+            
+            _mapper.Map(owner, ownerEntity);
+
+            _repository.Owner.UpdateOwner(ownerEntity);
+            _repository.Save();
+
+            return NoContent();
+        }
+        catch (System.Exception ex)
+        {
+            _logger.LogError($"Something wrong in UpdateOwner action: {ex.Message}");
+            return StatusCode(500);
+        }
+    }
+
+    [HttpDelete("id")]
+    public IActionResult DeleteOwner(Guid id)
+    {
+        try
+        {
+            var owner = _repository.Owner.GetOwnerById(id);
+
+            if (owner is null)
+            {
+                _logger.LogInfo($"The Owner with id: {id} not found!");
+                return NotFound();    
+            }
+
+            _repository.Owner.DeleteOwner(owner);
+            _repository.Save();
+
+            return NoContent();
+        }
+        catch (System.Exception ex)
+        {
+            _logger.LogError($"Something wrong in DeleteOwner action: {ex.Message}");
             return StatusCode(500);
         }
     }
