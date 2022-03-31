@@ -13,7 +13,7 @@ public class Account
     public DateTime DateCreated {get; set;}
 
     [Required]
-    public string AccuntType {get; set;}
+    public string AccountType {get; set;}
 
     [ForeignKey(nameof(Owner))]
     public Guid OwnerId {get; set;}

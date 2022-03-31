@@ -12,6 +12,6 @@ public class AccountRepository : RepositoryBase<Account>, IAccountRepository
 
     public IEnumerable<Account> AccountsByOwner(Guid ownerId)
     {
-        return FindByCondition(a => a.OwnerId.Equals(ownerId)).ToList();
+        return FindByCondition(a=>a.OwnerId.Equals(ownerId)).ToList();
     }
 }

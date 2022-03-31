@@ -10,3 +10,8 @@ Mapping types:
 OwnerCreateDTO -> Owner
 Entities.DTO.OwnerCreateDTO -> Entities.Owner
 2022-03-31 15:12:48.4365 INFO GET Method Returned Owner with id: 08da1341-9a89-4dc7-879b-7f68328f3f74.
+2022-03-31 18:36:06.9545 INFO GET Method Returned all Owners.
+2022-03-31 18:37:28.1994 INFO GET Method Returned all Owners.
+2022-03-31 18:37:30.8334 INFO GET Method Returned all Owners.
+2022-03-31 18:39:07.3224 INFO GET Method Returned all Owners.
+2022-03-31 18:39:56.8902 ERROR Something wrong in DeleteOwner action: Unknown column 'a.AccuntType' in 'field list'
