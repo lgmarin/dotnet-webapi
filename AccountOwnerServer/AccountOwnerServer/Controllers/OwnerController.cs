@@ -151,6 +151,12 @@ public class OwnerController : ControllerBase
                 return NotFound();    
             }
 
+            if (_repository.Account.AccountsByOwner(id).Any())
+            {
+                _logger.LogInfo($"The Owner with id: {id} has related accounts that should be deleted firs!");
+                return BadRequest("Cannot delete Owner. It has related Accounts that should be removed first!");                   
+            }
+
             _repository.Owner.DeleteOwner(owner);
             _repository.Save();
 
