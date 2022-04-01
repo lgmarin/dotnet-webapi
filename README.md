@@ -15,6 +15,8 @@ I took this guide for learning the core aspects of a robust WEBApi with Reposito
 
 As always, as I'm going through other interesting tools and concepts, I probably add in this project (pagination, Elasticsearch, ...)
 
+![Database-Model](mysql_model.png "MySQL Modelling of the Database")
+
 ## Objectives
 
 Develop a robust and scalable WebAPI in ASP .NET with consumption in an Angular FrontEnd
