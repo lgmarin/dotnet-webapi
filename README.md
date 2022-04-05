@@ -52,8 +52,9 @@ Develop a robust and scalable WebAPI in ASP .NET with consumption in an Angular 
 Run MySQL Docker Container
 
 ```sh
-docker run --name some-mysql 
-    -e MYSQL_ROOT_PASSWORD=my-secret-pw 
+docker run --name docker-mysql
+    -p 3306:3306
+    -e MYSQL_ROOT_PASSWORD=biscoito
     -d mysql
 ```
 
