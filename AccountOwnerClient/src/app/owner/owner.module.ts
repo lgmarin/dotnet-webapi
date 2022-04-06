@@ -4,13 +4,15 @@ import { OwnerListComponent } from './owner-list/owner-list.component';
 import { RouterModule } from '@angular/router';
 import { OwnerDetailsComponent } from './owner-details/owner-details.component';
 import { SharedModule } from '../shared/shared.module';
+import { OwnerCreateComponent } from './owner-create/owner-create.component';
 
 
 
 @NgModule({
   declarations: [
     OwnerListComponent,
-    OwnerDetailsComponent
+    OwnerDetailsComponent,
+    OwnerCreateComponent
   ],
   imports: [
     CommonModule,
@@ -18,6 +20,7 @@ import { SharedModule } from '../shared/shared.module';
     RouterModule.forChild([
       { path: 'list', component: OwnerListComponent },
       { path: 'details/:id', component: OwnerDetailsComponent },
+      { path: 'create', component: OwnerCreateComponent },
 
     ])
   ]
