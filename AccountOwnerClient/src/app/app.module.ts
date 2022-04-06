@@ -22,12 +22,12 @@ import { InternalServerComponent } from './error-pages/internal-server/internal-
     HttpClientModule,
     RouterModule.forRoot([
       { path: 'home', component: HomeComponent },
-      { path: '404', component: NotFoundComponent},
+      { path: '404', component: NotFoundComponent },
       { path: '500', component: InternalServerComponent },
-      { path: 'owner', loadChildren: () => import('./owner/owner.module').then(m => m.OwnerModule)},
+      { path: 'owner', loadChildren: () => import('./owner/owner.module').then(m => m.OwnerModule) },
       { path: '', redirectTo: '/home', pathMatch: 'full' },
-      { path: '**', redirectTo: '/404', pathMatch: 'full'},
-      { path: '**', redirectTo: '/500', pathMatch: 'full'}
+      { path: '**', redirectTo: '/404', pathMatch: 'full' },
+      { path: '**', redirectTo: '/500', pathMatch: 'full' }
     ])
   ],
   providers: [],

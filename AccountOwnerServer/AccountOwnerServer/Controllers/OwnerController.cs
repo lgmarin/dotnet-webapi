@@ -66,6 +66,31 @@ public class OwnerController : ControllerBase
         }
     }
 
+    [HttpGet("{id}/account")]
+    public IActionResult GetOwnerWithDetails(Guid id)
+    {
+        try
+        {
+            var owner = _repository.Owner.GetOwnerWithDetails(id);
+
+            if (owner == null)
+            {
+                _logger.LogError($"GET OwnerWithDetails Method - Not Found Owner with id: {id}.");
+                return NotFound();
+            } else {
+                _logger.LogInfo($"GET OwnerWithDetails - Method Returned Owner with id: {id}.");
+
+                var ownerResult = _mapper.Map<OwnerDTO>(owner);
+                return Ok(ownerResult);
+           }
+        }
+        catch (System.Exception ex)
+        {
+            _logger.LogError($"Something wrong in GetOwnerWithDetails action: {ex.Message}");
+            return StatusCode(500, "Internal Server Error");
+        }
+    }
+
     [HttpPost]
     public IActionResult CreateOwner([FromBody]OwnerCreateDTO owner)
     {
