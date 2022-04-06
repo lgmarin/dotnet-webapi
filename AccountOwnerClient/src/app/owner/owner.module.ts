@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { OwnerDetailsComponent } from './owner-details/owner-details.component';
 import { SharedModule } from '../shared/shared.module';
 import { OwnerCreateComponent } from './owner-create/owner-create.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -17,6 +18,7 @@ import { OwnerCreateComponent } from './owner-create/owner-create.component';
   imports: [
     CommonModule,
     SharedModule,
+    ReactiveFormsModule,
     RouterModule.forChild([
       { path: 'list', component: OwnerListComponent },
       { path: 'details/:id', component: OwnerDetailsComponent },

@@ -26,10 +26,10 @@ export class OwnerDetailsComponent implements OnInit {
 
     this.repository.getData(apiUrl).subscribe((res) => {
       this.owner = res as Owner;
-    },
-    (error) => {
+    }, (error) => {
       this.errorHandler.handleError(error);
       this.errorMessage = this.errorHandler.errorMessage;
     })
   }
 }
+ 
