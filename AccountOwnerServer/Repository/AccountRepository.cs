@@ -10,8 +10,8 @@ public class AccountRepository : RepositoryBase<Account>, IAccountRepository
     {        
     }
 
-    public IEnumerable<Account> AccountsByOwner(Guid ownerId)
+    public async Task<IEnumerable<Account>> AccountsByOwner(Guid ownerId)
     {
-        return FindByCondition(a=>a.OwnerId.Equals(ownerId)).ToList();
+        return await FindByCondition(a=>a.OwnerId.Equals(ownerId)).ToListAsync();
     }
 }
