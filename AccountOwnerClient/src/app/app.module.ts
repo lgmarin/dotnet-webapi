@@ -26,8 +26,7 @@ import { InternalServerComponent } from './error-pages/internal-server/internal-
       { path: '500', component: InternalServerComponent },
       { path: 'owner', loadChildren: () => import('./owner/owner.module').then(m => m.OwnerModule) },
       { path: '', redirectTo: '/home', pathMatch: 'full' },
-      { path: '**', redirectTo: '/404', pathMatch: 'full' },
-      { path: '**', redirectTo: '/500', pathMatch: 'full' }
+      { path: '**', redirectTo: '/404', pathMatch: 'full' }
     ])
   ],
   providers: [],
