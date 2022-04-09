@@ -22,11 +22,11 @@ public class OwnerController : ControllerBase
     }
 
     [HttpGet]
-    public IActionResult GetAllOwners()
+    public async Task<IActionResult> GetAllOwners()
     {
         try
         {
-            var owners = _repository.Owner.GetAllOwners();
+            var owners = await _repository.Owner.GetAllOwners();
 
             _logger.LogInfo("GET Method Returned all Owners.");
 
@@ -41,11 +41,11 @@ public class OwnerController : ControllerBase
     }
 
     [HttpGet("{id}", Name = "OwnerById")]
-    public IActionResult GetOwnerById(Guid id)
+    public async Task<IActionResult> GetOwnerById(Guid id)
     {
         try
         {
-            var owner = _repository.Owner.GetOwnerById(id);
+            var owner = await _repository.Owner.GetOwnerById(id);
             if (owner is null)
             {
                 _logger.LogInfo($"GET Method Not Found Owner with id: {id}.");
@@ -67,11 +67,11 @@ public class OwnerController : ControllerBase
     }
 
     [HttpGet("{id}/account")]
-    public IActionResult GetOwnerWithDetails(Guid id)
+    public async Task<IActionResult> GetOwnerWithDetails(Guid id)
     {
         try
         {
-            var owner = _repository.Owner.GetOwnerWithDetails(id);
+            var owner = await _repository.Owner.GetOwnerWithDetails(id);
 
             if (owner == null)
             {
@@ -92,7 +92,7 @@ public class OwnerController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult CreateOwner([FromBody]OwnerCreateDTO owner)
+    public async Task<IActionResult> CreateOwner([FromBody]OwnerCreateDTO owner)
     {
         try
         {
@@ -111,7 +111,7 @@ public class OwnerController : ControllerBase
             var ownerEntity = _mapper.Map<Owner>(owner);
 
             _repository.Owner.CreateOwner(ownerEntity);
-            _repository.Save();
+            await _repository.SaveAsync();
 
             var createdOwner = _mapper.Map<OwnerDTO>(ownerEntity);
 
@@ -125,7 +125,7 @@ public class OwnerController : ControllerBase
     }
 
     [HttpPut("id")]
-    public IActionResult UpdateOwner(Guid id, [FromBody]OwnerUpdateDTO owner)
+    public async Task<IActionResult> UpdateOwner(Guid id, [FromBody]OwnerUpdateDTO owner)
     {
         try
         {
@@ -141,7 +141,7 @@ public class OwnerController : ControllerBase
                 return BadRequest("Invalid Owner object!");                
             }
 
-            var ownerEntity = _repository.Owner.GetOwnerById(id);
+            var ownerEntity = await _repository.Owner.GetOwnerById(id);
 
             if (ownerEntity is null)
             {
@@ -152,7 +152,7 @@ public class OwnerController : ControllerBase
             _mapper.Map(owner, ownerEntity);
 
             _repository.Owner.UpdateOwner(ownerEntity);
-            _repository.Save();
+            await _repository.SaveAsync();
 
             return NoContent();
         }
@@ -164,11 +164,11 @@ public class OwnerController : ControllerBase
     }
 
     [HttpDelete("id")]
-    public IActionResult DeleteOwner(Guid id)
+    public async Task<IActionResult> DeleteOwner(Guid id)
     {
         try
         {
-            var owner = _repository.Owner.GetOwnerById(id);
+            var owner = await _repository.Owner.GetOwnerById(id);
 
             if (owner is null)
             {
@@ -183,7 +183,7 @@ public class OwnerController : ControllerBase
             }
 
             _repository.Owner.DeleteOwner(owner);
-            _repository.Save();
+            await _repository.SaveAsync();
 
             return NoContent();
         }
