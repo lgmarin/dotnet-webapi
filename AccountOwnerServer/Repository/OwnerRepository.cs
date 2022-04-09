@@ -11,24 +11,24 @@ public class OwnerRepository : RepositoryBase<Owner>, IOwnerRepository
         
     }
 
-    IEnumerable<Owner> IOwnerRepository.GetAllOwners()
+    public async Task<IEnumerable<Owner>> GetAllOwners()
     {
-        return FindAll()
+        return await FindAll()
             .OrderBy(o => o.Name)
-            .ToList();
+            .ToListAsync();
     }
 
-    public Owner GetOwnerById(Guid OwnerId)
+    public async Task<Owner> GetOwnerById(Guid OwnerId)
     {
-         return FindByCondition(owner => owner.Id.Equals(OwnerId))
-            .FirstOrDefault();   
+         return await FindByCondition(owner => owner.Id.Equals(OwnerId))
+            .FirstOrDefaultAsync();   
     }
 
-    public Owner GetOwnerWithDetails(Guid ownerId)
+    public async Task<Owner> GetOwnerWithDetails(Guid ownerId)
     {
-        return FindByCondition(owner => owner.Id.Equals(ownerId))
+        return await FindByCondition(owner => owner.Id.Equals(ownerId))
             .Include(ac => ac.Accounts)
-            .FirstOrDefault();
+            .FirstOrDefaultAsync();
     }
 
     public void CreateOwner(Owner owner)
